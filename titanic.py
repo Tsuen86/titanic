@@ -43,7 +43,7 @@ y = titanic_data['Survived']
 from sklearn.model_selection import train_test_split
 
 
-Xtrain, Xtest, ytrain, ytest = train_test_split(X, y,random_state=1234,test_size=0.2)
+Xtrain, Xtest, ytrain, ytest = train_test_split(X, y,random_state=1234,test_size=test_data_ratio)
 
 
 from sklearn.ensemble import RandomForestClassifier
