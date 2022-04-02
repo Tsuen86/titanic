@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 
 
-st.title('CLASSIFICATION')
+st.title('TITANIC Dataset: Classification')
 
 st.sidebar.write("""
 A classification demo using titanic dataset
@@ -10,7 +10,7 @@ A classification demo using titanic dataset
 
 st.sidebar.write ("For more info, please contact:")
 
-st.sidebar.write("<a href='https://www.linkedin.com/in/yong-poh-yu/'>Dr. Yong Poh Yu </a>", unsafe_allow_html=True)
+st.sidebar.write("<a href='https://www.linkedin.com/in/huei-tsuen-lim-89225536/'>Lim Huei Tsuen </a>", unsafe_allow_html=True)
 
 
 
@@ -20,7 +20,7 @@ test_data_ratio = st.sidebar.slider('Select testing size or ratio',
                                     max_value = 0.50,
                                     value=0.2)
 n_estimators = st.sidebar.slider('Choose number of trees', 1, 1000,value=100)
-max_depth = st.sidebar.slider('Choose number of levels', 1, 10,value=30)
+max_depth = st.sidebar.slider('Choose number of levels', 1, 30,value=10)
 
 
 titanic_data = pd.read_csv('titanic.csv')
